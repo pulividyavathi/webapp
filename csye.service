@@ -1,0 +1,17 @@
+[Unit]
+Description=My csye6225 app
+After=network.target
+Wants=cloud-init.target
+
+[Service]
+Type=simple
+User=csyeuser
+WorkingDirectory=/home/csyeuser/webapp/
+ExecStart=/usr/bin/node /home/csyeuser/webapp/server.js
+StandardOutput=file:/var/log/tomcat9/csye6225.log
+StandardError=file:/var/log/tomcat9/csye6225.log
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

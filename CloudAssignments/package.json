@@ -1,0 +1,36 @@
+{
+  "name": "cloud_a1",
+  "version": "1.0.0",
+  "description": "Node Express Sequelize API",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --exit test.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "node express SQL",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^3.1.0",
+    "aws-sdk": "^2.1501.0",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "logger": "^0.0.1",
+    "mysql2": "^3.6.1",
+    "node-statsd": "^0.1.1",
+    "nodemon": "^3.0.1",
+    "postgres": "^3.3.5",
+    "sequelize": "^6.33.0",
+    "supertest": "^6.3.3",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "csv-parser": "^3.0.0",
+    "mocha": "^10.2.0"
+  }
+}

@@ -1,16 +1,3 @@
-// const { describe } = require('./models/assignmentModel');
-// const app = require('./server');
-
-// const { response } = require('./server');
-// const {expect} = require('chai')
-// chai.use(chaiHttp)
-
-// describe('Health Check Endpoint', () => {
-//     it('should return a 200 status code on successful health check', async () => {
-//       const res = await chai.request(app).get('/healthz');
-//       expect(res).to.have.status(200);
-//     })})
-// console.log(describe)
 
 const supertest = require('supertest');
 const {app} = require('./server');
